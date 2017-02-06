@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/entry_name"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textCapSentences"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:onClick="SaveInFile" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/entry_date_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:inputType="date"
+                android:hint="YYYY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+            <EditText
+                android:id="@+id/entry_date_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:inputType="date"
+                android:hint="MM"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+            <EditText
+                android:id="@+id/entry_date_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="2"
+                android:inputType="date"
+                android:hint="DD"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/entry_neck"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="neck (circumference in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_bust"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="bust (circumference in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_chest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="chest (circumference in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_waist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="waist (circumference in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_hip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="hip (circumference in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_inseam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="inseam (length in inches)"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/entry_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comment"
+            android:gravity="top"
+            android:layout_weight="1"
+            android:inputType="textCapSentences"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">zelin-SizeBook</string>
+    <string name="title_activity_add_entry">AddEntry</string>
+</resources>
